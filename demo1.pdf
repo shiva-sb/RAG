@@ -1,0 +1,33 @@
+The Evolution of Large Language Models (LLMs)
+Overview and Origins
+Large Language Models (LLMs) are specialized artificial intelligence systems trained on vast datasets to understand and generate human-like text. The modern era of LLMs was triggered by the introduction of the Transformer architecture in a 2017 research paper titled "Attention Is All You Need." This architecture replaced previous Recurrent Neural Network (RNN) structures by utilizing a mechanism known as Self-Attention, which allows the model to weigh the importance of different words in a sentence simultaneously.
+
+Key Architectural Components
+Most contemporary LLMs, such as GPT-4 and Llama 3, consist of billions of parameters. These models typically follow a "Decoder-only" or "Encoder-Decoder" structure. A critical component in their performance is Positional Encoding, which helps the model understand the order of words since Transformers process data in parallel rather than sequentially.
+
+The Training Process
+The lifecycle of an LLM generally involves three distinct phases:
+
+Pre-training: The model learns general language patterns from a massive corpus (like Common Crawl or Wikipedia).
+
+Supervised Fine-Tuning (SFT): The model is trained on curated datasets of questions and answers to follow specific instructions.
+
+RLHF (Reinforcement Learning from Human Feedback): Human evaluators rank model outputs to align the AI with human values, safety, and helpfulness.
+
+The Role of RAG
+While LLMs are powerful, they suffer from "hallucinations"—generating confident but false information. Retrieval-Augmented Generation (RAG) was developed to mitigate this by allowing the model to query an external knowledge base (usually a Vector Database) before generating a response. This ensures the output is grounded in verifiable, up-to-date facts.
+
+Test Questions for Your RAG Model
+Once you've indexed this text, try asking your rag.py these questions to see if it’s working:
+
+Fact Retrieval: "What was the title of the 2017 research paper that introduced the Transformer architecture?"
+
+(Correct answer: "Attention Is All You Need")
+
+Detailed Logic: "What are the three phases of the LLM lifecycle mentioned in the text?"
+
+(Correct answer: Pre-training, Supervised Fine-Tuning, and RLHF)
+
+Specific Definition: "How does Positional Encoding help a Transformer model?"
+
+(Correct answer: It helps the model understand the order of words since it processes data in parallel)

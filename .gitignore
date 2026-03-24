@@ -1,0 +1,15 @@
+# Environments
+env/
+venv/
+.env
+
+# Python Cache
+__pycache__/
+*.pyc
+
+# Local Vector Database (Don't upload 100MB+ of index files)
+faiss_index_store/
+
+# Operating System files
+.DS_Store
+Thumbs.db
